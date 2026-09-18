@@ -1,5 +1,5 @@
 /**
- * CENTRALIZED IMAGE CONFIGURATION - TMT VÄGMARKERINGAR AB
+ * CENTRALIZED IMAGE CONFIGURATION - NORDISK BERGMARK AB
  *
  * All images used across the site are defined here.
  */
@@ -41,147 +41,135 @@ export interface SiteImages {
 const images: SiteImages = {
   logo: {
     url: '/logo.png',
-    alt: 'TMT Vägmarkeringar - Professionell vägmarkering och linjemålning i hela Sverige',
+    alt: 'Nordisk Bergmark AB - Bergsprängning, stenspräckning och markarbeten på Orust och i Bohuslän',
   },
   logoDark: {
     url: '/logo-dark.png',
-    alt: 'TMT Vägmarkeringar AB',
+    alt: 'Nordisk Bergmark AB',
   },
   ogImage: {
     url: '/og-image.png',
-    alt: 'TMT Vägmarkeringar Logotyp',
+    alt: 'Nordisk Bergmark AB Logotyp',
   },
 
   hero: {
     background: {
       url: '/hero-main.webp',
-      alt: 'TMT Vägmarkeringar professionell vägmarkering och linjemålning',
+      alt: 'Nordisk Bergmark AB professionella markarbeten, bergsprängning och schaktning',
     },
-    videoUrl: 'https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260916_120304_b6e22521-4e42-4364-9c14-ebed64144e92.mp4',
+    videoUrl: 'https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260918_142212_05bae687-470d-442c-a0d8-78c8ac61ca86.mp4',
   },
 
   services: {
-    'vagmarkering': {
-      url: '/gallery/gallery-2.jpg',
-      alt: 'Vägmarkering och linjemålning i hela Sverige',
-    },
-    'parkeringsmarkering': {
-      url: '/gallery/gallery-1.jpg',
-      alt: 'Parkeringsmarkering och laddplatser',
-    },
-    'industrimalning': {
-      url: '/gallery/gallery-4.jpg',
-      alt: 'Industrimålning och truckgångar i lagerlokaler',
-    },
-    'symbolmalning': {
+    'bergsprangning': {
       url: '/gallery/gallery-3.jpg',
-      alt: 'Symbolmålning, pilar och övergångsställen',
+      alt: 'Bergsprängning och stenspräckning på Orust och i Bohuslän',
+    },
+    'markarbete': {
+      url: '/gallery/gallery-1.jpg',
+      alt: 'Markarbete och grävning för fastigheter och tomter',
+    },
+    'dranering': {
+      url: '/service-dranering.webp',
+      alt: 'Husdränering och dagvattenledningar',
+    },
+    'snorojning': {
+      url: '/service-snorojning.jpg',
+      alt: 'Snöröjning, snöplogning och halkbekämpning i Bohuslän',
     },
   },
 
   gallery: [
     {
       url: '/gallery/gallery-1.jpg',
-      alt: 'TMT Vägmarkeringar parkeringsmarkering och linjemålning',
+      alt: 'Bandgrävare Volvo under markberedning och tomtplanering',
     },
     {
       url: '/gallery/gallery-2.jpg',
-      alt: 'TMT Vägmarkeringar vägmarkering och övergångsställe',
+      alt: 'Minigrävare vid stenspräckning och bergsschakt intill villa',
     },
     {
       url: '/gallery/gallery-3.jpg',
-      alt: 'TMT Vägmarkeringar laddplats och symbolmarkering',
+      alt: 'Bergsprängning med sprängmattor på skärgårdstomt i Bohuslän',
     },
     {
       url: '/gallery/gallery-4.jpg',
-      alt: 'TMT Vägmarkeringar industrimålning och truckgångar',
+      alt: 'Precisionssprängning under sprängmattor',
     },
     {
-      url: '/gallery/gallery-5.jpg',
-      alt: 'TMT Vägmarkeringar linjemålning och trafiksäkerhet',
-    },
-    {
-      url: '/gallery/gallery-6.jpg',
-      alt: 'TMT Vägmarkeringar symboler och stopplinjer',
+      url: '/about.jpg',
+      alt: 'Atlas Copco borrigg för bergborrning Nordisk Bergmark AB',
     },
   ],
 
   cta: {
     banner: {
-      url: '/cta-banner-bg.jpg',
-      alt: 'TMT Vägmarkeringar lastbil och vägmarkeringsutrustning',
+      url: '/gallery/gallery-3.jpg',
+      alt: 'Nordisk Bergmark AB bergsprängning och markarbete',
     },
     midSection: {
-      url: '/cta-mid-section.webp',
-      alt: 'TMT Vägmarkeringar linjemålning',
+      url: '/gallery/gallery-2.jpg',
+      alt: 'Nordisk Bergmark AB schakt och stenspräckning',
     },
   },
 
   about: {
     hero: {
       url: '/about.jpg',
-      alt: 'TMT Vägmarkeringar AB verksamhet och expertis i hela Sverige',
+      alt: 'Nordisk Bergmark AB borrigg och maskinpark på Orust och i Bohuslän',
     },
   },
 
   whyChooseUs: {
-    url: '/why-choose-us.webp',
-    alt: 'Professionell vägmarkering med högsta precision - TMT Vägmarkeringar AB',
+    url: '/gallery/gallery-1.jpg',
+    alt: 'Professionella markarbeten med modern maskinpark - Nordisk Bergmark AB',
   },
 
   ideaToResult: {
-    url: '/idea-to-result.webp',
-    alt: 'Från planering till färdig vägmarkering i hela Sverige',
+    url: '/gallery/gallery-3.jpg',
+    alt: 'Från berg och råmark till färdig tomt i Bohuslän',
   },
 
   portfolio: [
     {
       image: {
-        url: '/gallery/gallery-1.jpg',
-        alt: 'Parkeringsmarkering och linjemålning för företag och BRF',
+        url: '/gallery/gallery-3.jpg',
+        alt: 'Bergsprängning för nybyggnation på havstomt i Bohuslän',
       },
-      title: 'Parkeringsmarkering & Linjer',
-      category: 'Parkeringsplatser',
+      title: 'Bergsprängning Havstomt',
+      category: 'Bergsprängning',
     },
     {
       image: {
         url: '/gallery/gallery-2.jpg',
-        alt: 'Vägmarkering och övergångsställe för kommun och samfällighet',
+        alt: 'Skonsam stenspräckning intill befintlig villa och trädgård',
       },
-      title: 'Vägmarkering & Övergångsställe',
-      category: 'Vägmarkering',
+      title: 'Stenspräckning Villa',
+      category: 'Stenspräckning',
     },
     {
       image: {
-        url: '/gallery/gallery-3.jpg',
-        alt: 'Laddplatsmarkering och elbilssymboler',
+        url: '/gallery/gallery-1.jpg',
+        alt: 'Tomtplanering och grundschaktning på Orust',
       },
-      title: 'Laddplatser & Symboler',
-      category: 'Laddplatsmarkering',
+      title: 'Markarbete & Tomtplanering',
+      category: 'Markarbeten',
+    },
+    {
+      image: {
+        url: '/about.jpg',
+        alt: 'Borrning i granit med modern bandburen borrigg',
+      },
+      title: 'Bergborrning med Borrigg',
+      category: 'Bergborrning',
     },
     {
       image: {
         url: '/gallery/gallery-4.jpg',
-        alt: 'Industrimarkering av truckgångar och skyddszoner i lager',
+        alt: 'Säker bergsprängning under sprängmattor',
       },
-      title: 'Industrilinjer & Truckgångar',
-      category: 'Industrimarkering',
-    },
-    {
-      image: {
-        url: '/gallery/gallery-5.jpg',
-        alt: 'Linjemålning för ökad trafiksäkerhet',
-      },
-      title: 'Linjemålning & Trafiksäkerhet',
-      category: 'Vägmarkering',
-    },
-    {
-      image: {
-        url: '/gallery/gallery-6.jpg',
-        alt: 'Symboler, pilar och stopplinjer med termoplast',
-      },
-      title: 'Symboler, Pilar & Stopplinjer',
-      category: 'Specialmarkering',
+      title: 'Precisionssprängning Berg',
+      category: 'Bergarbeten',
     },
   ],
 };

@@ -34,122 +34,122 @@ export interface ServiceItem {
 
 export const services: ServiceItem[] = [
   {
-    slug: 'vagmarkering',
-    title: 'Vägmarkering & Trafik',
-    shortDescription: 'Kompletta vägmarkeringssystem, kantlinjer, mittlinjer och övergångsställen med slitstark termoplast och moderna appliceringsmetoder.',
-    heroText: 'Hållbara vägmarkeringar som skapar säkra och tydliga trafikmiljöer över hela Sverige.',
-    detailedDescription: `TMT Vägmarkeringar AB är specialister på alla typer av vägmarkeringar för allmänna vägar, enskilda vägar, samfälligheter och kommunala gator. Med över 30 års samlad erfarenhet utför vi allt från nymålning till underhåll av befintliga väglinjer med högsta precision och slitstyrka.
+    slug: 'bergsprangning',
+    title: 'Bergsprängning',
+    shortDescription: 'Säker och certifierad bergsprängning, vibrationsdämpad stenspräckning och bergborrning för villatomter, grunder och anläggningsprojekt.',
+    heroText: 'Säker bergsprängning och kontrollerad stenspräckning med högsta precision på Orust och i hela Bohuslän.',
+    detailedDescription: `Nordisk Bergmark AB är specialister på säker och varsam bergsprängning, hydraulisk stenspräckning och bergborrning. Vi hjälper privatpersoner, byggföretag och samfälligheter på Orust, i Uddevalla och över hela Bohuslän att forma berget för nya villor, tillbyggnader, garage, pooler eller VA-schakter.
 
-Vi använder moderna metoder och godkända material som uppfyller Trafikverkets krav och standarder. Oavsett om det gäller motorvägar, tätortsgator eller samfällighetsvägar säkerställer vi tydlig vägledning och ökad trafiksäkerhet för alla trafikanter.`,
-    heroImage: '/gallery/gallery-2.jpg',
-    image: '/gallery/gallery-2.jpg',
-    href: '/tjanster#vagmarkering',
-    tag: 'Vägmarkering',
-    badge: 'Trafiksäkerhet',
-    highlights: [
-      'Kantlinjer, mittlinjer och varningslinjer',
-      'Övergångsställen och farthindermarkering',
-      'Termoplast med hög friktion och reflexförmåga',
-      'Snabb applicering med minimal trafikstörning',
-    ],
-    faq: [
-      {
-        question: 'Vilket material använder ni vid vägmarkering?',
-        answer: 'Vi använder främst godkänd termoplast och slitstark vägmarkeringsfärg med inblandade glaspärlor för optimal reflexförmåga och synbarhet i mörker och regn.',
-      },
-      {
-        question: 'Utför ni arbeten på natten för att undvika trafikstörningar?',
-        answer: 'Ja, vi anpassar arbetstiderna efter trafikflödet och utför ofta uppdrag under kvällar och nätter när trafiken är som lägst.',
-      },
-    ],
-  },
-  {
-    slug: 'parkeringsmarkering',
-    title: 'Parkeringsmarkering',
-    shortDescription: 'Tydliga parkeringsrutor, handikapplatser, elbilsladdplatser och numrering för bostadsrättsföreningar, köpcentrum och företag.',
-    heroText: 'Optimera parkeringsytan och skapa en ordnad, välkomnande miljö med professionell linjemålning.',
-    detailedDescription: `En genomtänkt parkeringsmarkering maximerar antalet platser, minskar risken för parkeringsskador och skapar ett prydligt och organiserat intryck. TMT Vägmarkeringar AB hjälper bostadsrättsföreningar, fastighetsbolag och handelsplatser över hela Sverige att linjera parkeringsytor, laddplatser, MC-platser och tillgänglighetsanpassade rutor enligt gällande regler.
-
-Vi hjälper er även med optimering av flöden och linjelayouter så att fordon enkelt och säkert kan manövrera på området.`,
-    heroImage: '/gallery/gallery-1.jpg',
-    image: '/gallery/gallery-1.jpg',
-    href: '/tjanster#parkeringsmarkering',
-    tag: 'Parkeringslinjer',
-    badge: 'Optimerad Layout',
-    highlights: [
-      'Målning och uppmätning av parkeringsrutor',
-      'Laddplatsmarkering med gröna fält och elbilssymboler',
-      'Handikapplatser enligt tillgänglighetskrav',
-      'P-numrering, pilar och reserverade platser',
-    ],
-    faq: [
-      {
-        question: 'Hur snabbt kan bilarna parkera efter att linjerna målats?',
-        answer: 'Beroende på material och temperatur torkar moderna markeringsfärger och termoplast oftast på 15–30 minuter, vilket minimerar avstängningstiden.',
-      },
-      {
-        question: 'Kan ni hjälpa till att mäta upp och optimera parkeringsytan?',
-        answer: 'Absolut! Vi har lång erfarenhet av layoutplanering och hjälper er att disponera ytan så att ni får maximalt antal säkra och bekväma platser.',
-      },
-    ],
-  },
-  {
-    slug: 'industrimalning',
-    title: 'Industrimålning & Lager',
-    shortDescription: 'Tydliga truckgångar, säkra gångstråk, pallplatser och skyddszoner för lagerlokaler, logistikcenter och tillverkningsindustri.',
-    heroText: 'Öka säkerheten och logistikflödet i lokalen med slitstarka industrimarkeringar och zonavgränsningar.',
-    detailedDescription: `I industri- och lagermiljöer är tydlig uppmärkning avgörande för säkerheten. Genom att separera gående från trucktrafik och tydligt markera nödutgångar, brandsläckare och pallplatser minskar risken för arbetsplatsolyckor samtidigt som logistiken löper smidigare.
-
-TMT Vägmarkeringar AB använder slitstarka tvåkomponentsfärger och termoplast anpassade för tufft industrislitage och frekvent trucktrafik på betong- och asfaltsgolv.`,
-    heroImage: '/gallery/gallery-4.jpg',
-    image: '/gallery/gallery-4.jpg',
-    href: '/tjanster#industrimalning',
-    tag: 'Industrimarkering',
-    badge: 'Arbetsmiljö & Säkerhet',
-    highlights: [
-      'Truckgångar och avskilda gångstråk för gående',
-      'Pallplatsrutor och numrerade lagerytor',
-      'Skyddszoner runt elcentraler och nödutgångar',
-      'Slitstarka 2K-färger för betonggolv och hårt slitage',
-    ],
-    faq: [
-      {
-        question: 'Klarar färgen tung trucktrafik och industritvätt?',
-        answer: 'Ja, vi använder industriklassade system och 2K-färger speciellt utvecklade för högt mekaniskt slitage, truckkörning och maskinell städning.',
-      },
-      {
-        question: 'Krävs det förbehandling av betonggolvet?',
-        answer: 'Vi utför vid behov noggrann rengöring, avfettning eller lätt slipning av underlaget för att garantera optimal vidhäftning och livslängd.',
-      },
-    ],
-  },
-  {
-    slug: 'symbolmalning',
-    title: 'Symboler & Specialmarkering',
-    shortDescription: 'Pilar, cykel- och gångsymboler, stopplinjer, textmarkeringar och lekplatsmålning med högsta precision och slitstyrka.',
-    heroText: 'Tydliga symboler och specialmarkeringar som leder trafiken rätt och skapar trygghet.',
-    detailedDescription: `Symboler och specialtecken är viktiga verktyg för att styra trafik och informera trafikanter. TMT Vägmarkeringar AB utför alla typer av symbolmålning med prefabricerad termoplast eller schabloner.
-
-Från riktningspilar och hastighetsbegränsningar till cykelsymboler, skolzoner och dekorativa lekplatsmönster levererar vi distinkta och slitstarka markeringar som tål det svenska klimatet.`,
+Med professionell maskinpark och godkända sprängmattor utför vi precisionssprängning även i trånga villamiljöer nära intilliggande byggnader. Vid särskilt känsliga lägen använder vi skonsam stenspräckning och bergborrning som minimerar vibrationer och omgivningspåverkan.`,
     heroImage: '/gallery/gallery-3.jpg',
     image: '/gallery/gallery-3.jpg',
-    href: '/tjanster#symbolmalning',
-    tag: 'Specialmarkering',
-    badge: 'Hög Precision',
+    href: '/tjanster#bergsprangning',
+    tag: 'Bergsprängning',
+    badge: 'Säker Sprängning',
     highlights: [
-      'Körfältspilar och stopplinjer',
-      'Gång- och cykelsymboler samt väjningsmarkering',
-      'Schablonmålning med siffror, bokstäver och texter',
-      'Skolgårdsmålning och aktivitetsbanor',
+      'Kontrollerad bergsprängning med godkända sprängmattor',
+      'Vibrationsdämpad stenspräckning nära fastigheter',
+      'Bergborrning för fundament, stolpar och bergvärme',
+      'Komplett borttransport av sprängsten och bergmassor',
     ],
     faq: [
       {
-        question: 'Kan ni ta fram specialanpassade symboler och logotyper?',
-        answer: 'Ja, med modern prefabricerad termoplast kan vi applicera företagslogotyper, unika mönster och specialdesignade markeringar direkt på underlaget.',
+        question: 'Kan ni spränga berg nära ett befintligt bostadshus?',
+        answer: 'Ja, vi utför varsam precisionssprängning med tunga sprängmattor och anpassad laddningsmängd. Vid extrem närhet till känsliga konstruktioner använder vi stenspräckning helt utan sprängämnen för maximal säkerhet.',
       },
       {
-        question: 'Hur lång är livslängden på termoplastiska symboler?',
-        answer: 'Prefabricerad termoplast smälts fast i asfalten och håller normalt upp till 6–8 gånger längre än traditionell färg.',
+        question: 'Krävs det besiktning och tillstånd innan sprängning?',
+        answer: 'Vi bistår med nödvändiga tillståndsansökningar och rekommenderar för- och efterbesiktning av närliggande fastigheter enligt gällande säkerhetsföreskrifter.',
+      },
+    ],
+  },
+  {
+    slug: 'markarbete',
+    title: 'Markarbeten',
+    shortDescription: 'Omfattande schakt- och grävarbeten, tomtplanering, grundläggning och anläggning med moderna band- och hjulgrävare.',
+    heroText: 'Professionella markarbeten och tomtplanering från grunden över hela Bohuslän.',
+    detailedDescription: `Vi på Nordisk Bergmark AB utför alla typer av mark- och schaktarbeten på Orust, i Uddevalla och omkringliggande kommuner. Oavsett om du ska förbereda marken för nybyggnation, anlägga ny infart, schakta för husgrund eller terrassera en kuperad tomt har vi rätt grävmaskiner och kompetens.
+
+Vi ser till att markförhållandena optimeras med bärlager, rätt fall och stabil grundläggning som håller mot väder och vind i det bohuslänska kustklimatet.`,
+    heroImage: '/gallery/gallery-1.jpg',
+    image: '/gallery/gallery-1.jpg',
+    href: '/tjanster#markarbete',
+    tag: 'Markarbeten',
+    badge: 'Stabil Grund',
+    highlights: [
+      'Schaktning och tomtplanering för nybyggnation',
+      'Grundläggning för villor, garage och attefallshus',
+      'Anläggning av vägar, uppfarter och parkeringsytor',
+      'Leverans och utläggning av grus, makadam och matjord',
+    ],
+    faq: [
+      {
+        question: 'Hjälper ni till med bortforsling av schaktmassor?',
+        answer: 'Ja, vi samordnar hela kedjan inklusive bortforsling av schaktmassor och leverans av rätt fyllnadsmaterial och bärlager.',
+      },
+      {
+        question: 'Vilka typer av grävmaskiner förfogar ni över?',
+        answer: 'Vår maskinpark omfattar moderna band- och minigrävare anpassade för allt från trånga trädgårdsschakter till omfattande anläggningsprojekt.',
+      },
+    ],
+  },
+  {
+    slug: 'dranering',
+    title: 'Dränering',
+    shortDescription: 'Fackmannamässig husdränering, fuktisolering av källargrund och anslutning av dagvatten- och avloppssystem.',
+    heroText: 'Trygg dränering och grundisolering som skyddar din fastighet mot fukt och vatteninträngning.',
+    detailedDescription: `Ett fullgott dräneringssystem är fastighetens viktigaste skydd mot fukt, mögel och vattenskador. Nordisk Bergmark AB utför certifierad husdränering och tilläggsisolering på Orust och i hela Bohuslän.
+
+Vi schaktar skonsamt runt husgrunden, lägger nya dräneringsrör, monterar fuktisolerande skivor och säkerställer korrekt avledning av dagvatten och regnvatten bort från fastigheten.`,
+    heroImage: '/service-dranering.webp',
+    image: '/service-dranering.webp',
+    href: '/tjanster#dranering',
+    tag: 'Dränering',
+    badge: 'Fuktskydd',
+    highlights: [
+      'Dränering och fuktisolering av källargrund',
+      'Dagvattenledningar, stenkistor och infiltration',
+      'Byte och anslutning av servisledningar för VA',
+      'Återställning av tomt och gräsytor efter schaktning',
+    ],
+    faq: [
+      {
+        question: 'Hur vet man att det är dags att dränera om grunden?',
+        answer: 'Vanliga tecken är fuktfläckar på källarväggar, unken lukt, färgsläpp eller att det gått mer än 25–30 år sedan förra dräneringen utfördes.',
+      },
+      {
+        question: 'Isolerar ni även källarväggarna vid dränering?',
+        answer: 'Ja, vi rekommenderar alltid utvändig fuktisolering (t.ex. dräneringsskivor) vilket ger både varmare källare och ett permanent fuktskydd.',
+      },
+    ],
+  },
+  {
+    slug: 'snorojning',
+    title: 'Snöröjning',
+    shortDescription: 'Pålitlig snöröjning, halkbekämpning och sandning under vintern samt maskinell gräsklippning och tomtunderhåll på sommaren.',
+    heroText: 'Pålitlig vinterväghållning och säsongsskötsel för vägar, samfälligheter och företag i Bohuslän.',
+    detailedDescription: `När vintern slår till i Bohuslän ser Nordisk Bergmark AB till att vägar, industritomter, samfällighetsvägar och parkeringsytor hålls säkra och framkomliga. Vi erbjuder snöröjning med plogning, saltning och sandning med beredskap dygnet runt under vintersäsongen.
+
+Under den varmare delen av året bistår vi även med storskalig gräsklippning, dikesrensning och allmänt markunderhåll för fastigheter och vägsamfälligheter på Orust och i Uddevalla med omnejd.`,
+    heroImage: '/service-snorojning.jpg',
+    image: '/service-snorojning.jpg',
+    href: '/tjanster#snorojning',
+    tag: 'Snöröjning',
+    badge: 'Vinterväghållning',
+    highlights: [
+      'Snöplogning av vägar, parkeringar och infarter',
+      'Halkbekämpning och sandning',
+      'Beredskapsavtal för företag och samfälligheter',
+      'Maskinell gräsklippning och markskötsel',
+    ],
+    faq: [
+      {
+        question: 'Erbjuder ni fasta beredskapsavtal för snöröjning?',
+        answer: 'Ja, vi tecknar säsongsavtal med samfälligheter, BRF:er och företag där vi rycker ut automatiskt vid visst snödjup.',
+      },
+      {
+        question: 'Vilka områden täcker ni med snöröjning?',
+        answer: 'Vi utgår från Orust och erbjuder vinterväghållning och snöröjning i närområdet samt delar av Uddevalla och Tjörn.',
       },
     ],
   },

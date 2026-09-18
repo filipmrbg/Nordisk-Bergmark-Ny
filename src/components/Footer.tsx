@@ -4,8 +4,8 @@ import images from '../data/images';
 import services from '../data/services';
 
 const socialIcons = [
-  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/tmt.vagmarkeringar/' },
-  { Icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/p/TMT-AB-100045809239067/?locale=sv_SE' },
+  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/nordiskbergmark/' },
+  { Icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/p/Nordisk-Berg-Mark-AB-61580709239263/' },
 ];
 
 export default function Footer() {
@@ -51,7 +51,7 @@ export default function Footer() {
               </Link>
             </div>
             <p style={{ color: 'var(--color-gray-600)', fontSize: '0.9rem', lineHeight: 1.7, margin: '0 0 20px 0' }}>
-              TMT Vägmarkeringar AB är specialister på vägmarkering, linjemålning, parkeringsmarkering och industrimålning för företag, kommuner och bostadsrättsföreningar i hela Sverige.
+              Nordisk Bergmark AB är specialister på bergsprängning, stenspräckning, bergborrning, schaktning och dränering. Vi utgår från Orust och utför kvalitetsarbeten över hela Bohuslän.
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
               {socialIcons.map(({ Icon, label, href }) => (
@@ -124,23 +124,23 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.95rem' }}>
 
               <a
-                href="mailto:info@tmtab.com"
+                href="mailto:Nordiskbergmark@gmail.com"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Mail size={16} strokeWidth={2} />
                 </div>
-                <span>info@tmtab.com</span>
+                <span>Nordiskbergmark@gmail.com</span>
               </a>
 
               <a
-                href="tel:0737718617"
+                href="tel:0722107582"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Phone size={16} strokeWidth={2} />
                 </div>
-                <span>073-771 86 17</span>
+                <span>072-210 75 82</span>
               </a>
 
               <div
@@ -149,7 +149,7 @@ export default function Footer() {
                 <div className="footer-contact-icon">
                   <MapPin size={16} strokeWidth={2} />
                 </div>
-                <span>Hela Sverige</span>
+                <span>Orust • Uddevalla • Bohuslän</span>
               </div>
             </div>
           </div>
@@ -171,8 +171,8 @@ export default function Footer() {
           }}
         >
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center', color: 'var(--color-gray-600)', fontSize: '0.875rem', flexWrap: 'wrap' }}>
-            <span>© 2026 - TMT Vägmarkeringar AB</span>
-            <span>Org.nr: 559221-0099</span>
+            <span>© 2026 - Nordisk Bergmark AB</span>
+            <span>Org.nr: 559547-7760</span>
             <span>Godkänd för F-skatt</span>
           </div>
         </div>

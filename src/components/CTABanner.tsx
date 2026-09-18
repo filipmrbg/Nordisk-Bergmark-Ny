@@ -10,9 +10,9 @@ interface Props {
 
 const defaultHeading = 'Begär en kostnadsfri offert';
 const defaultCheckItems = [
-  'Kostnadsfri rådgivning och offert',
+  'Kostnadsfri rådgivning och platsbesök',
   'Snabb återkoppling inom 24 timmar',
-  'Rikstäckande service i hela Sverige',
+  'Verksamma i Orust, Uddevalla och hela Bohuslän',
 ];
 
 export default function CTABanner({ heading = defaultHeading, checkItems = defaultCheckItems }: Props) {
@@ -25,10 +25,10 @@ export default function CTABanner({ heading = defaultHeading, checkItems = defau
       overflow: 'hidden',
       padding: 'clamp(70px, 9vw, 95px) 0',
     }}>
-      {/* Background Image: TMT Scania road marking truck */}
+      {/* Background Image: Nordisk Bergmark machinery */}
       <img
         src={bgImage}
-        alt="TMT Vägmarkeringar lastbil och utrustning"
+        alt="Nordisk Bergmark AB maskiner och utrustning"
         loading="lazy"
         decoding="async"
         style={{

@@ -13,8 +13,8 @@ const container: React.CSSProperties = {
 
 export default function About() {
   usePageTitle(
-    'Om TMT Vägmarkeringar | Professionell linjemålning i hela Sverige',
-    'Läs om TMT Vägmarkeringar AB. Sedan starten 2019 hjälper vi företag, kommuner och BRF:er med hållbara vägmarkeringar över hela Sverige.'
+    'Om Nordisk Bergmark AB | Bergarbeten & Markentreprenad i Bohuslän',
+    'Läs om Nordisk Bergmark AB. Vi är specialister på bergsprängning, bergborrning, stenspräckning och markarbeten på Orust, i Uddevalla och hela Bohuslän.'
   );
 
   return (
@@ -41,12 +41,12 @@ export default function About() {
                 margin: '0 0 16px 0',
                 lineHeight: 1.15,
               }}>
-                Om TMT Vägmarkeringar AB
+                Om Nordisk Bergmark AB
               </h1>
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={150}>
               <p style={{ color: 'rgba(255,255,255,0.92)', fontSize: '1.08rem', margin: '0 auto', maxWidth: '660px', lineHeight: 1.6 }}>
-                Specialister på vägmarkering, linjemålning och parkeringsmarkeringar med över 30 års samlad erfarenhet över hela Sverige.
+                Specialister på bergsprängning, stenspräckning, dränering och markarbeten med utgångspunkt från Orust över hela Bohuslän.
               </p>
             </ScrollReveal>
           </div>
@@ -73,7 +73,7 @@ export default function About() {
               }}>
                 <img
                   src={images.about.hero.url || '/about.jpg'}
-                  alt="TMT Vägmarkeringar AB verksamhet"
+                  alt="Nordisk Bergmark AB maskinpark och verksamhet"
                   loading="eager"
                   decoding="async"
                   style={{
@@ -105,7 +105,7 @@ export default function About() {
                   padding: '4px 14px',
                   borderRadius: '999px',
                 }}>
-                  Vår Bakgrund & Erfarenhet
+                  Vår Bakgrund & Expertis
                 </span>
                 <h2 style={{
                   color: 'var(--color-text-dark)',
@@ -114,7 +114,7 @@ export default function About() {
                   lineHeight: 1.2,
                   margin: '0 0 20px 0',
                 }}>
-                  Tydliga linjer och hållbara trafikmiljöer sedan 2019
+                  Säkra bergarbeten och gedigen markentreprenad
                 </h2>
               </ScrollReveal>
               <ScrollReveal animation="fade-up" delay={100}>
@@ -126,7 +126,7 @@ export default function About() {
                     margin: '0 0 20px 0',
                     fontWeight: 500,
                   }}>
-                    TMT Vägmarkeringar AB grundades 2019 med ambitionen att erbjuda marknadens mest pålitliga och kvalitativa lösningar inom vägmarkering och linjemålning.
+                    Nordisk Bergmark AB grundades med ambitionen att erbjuda marknadens mest pålitliga och säkra lösningar inom bergsprängning, bergborrning, stenspräckning och markarbeten.
                   </p>
                   
                   <p style={{
@@ -135,7 +135,7 @@ export default function About() {
                     lineHeight: 1.8,
                     margin: '0 0 20px 0',
                   }}>
-                    Med över 30 års samlad erfarenhet inom vägmarkering, linjemålning och trafiksäkerhet har vi etablerat oss som en trygg partner för företag, kommuner, bostadsrättsföreningar och fastighetsägare i hela Sverige. Vi förstår vikten av tydliga trafikmiljöer och utför allt från nymålning av parkeringsrutor och övergångsställen till kompletta vägmarkeringssystem och industrimålning.
+                    Med utgångspunkt från Orust arbetar vi över hela Bohuslän och Västra Götaland åt privatpersoner, byggentreprenörer, lantbruk och fastighetsägare. Vi förstår de unika geologiska utmaningarna i den bohuslänska terrängen och utför allt från försiktig stenspräckning intill villagrunder till omfattande bergborrning, tomtplanering, dränering och vinterväghållning.
                   </p>
 
                   <p style={{
@@ -144,7 +144,7 @@ export default function About() {
                     lineHeight: 1.8,
                     margin: '0 0 24px 0',
                   }}>
-                    Vårt fokus ligger på högsta kvalitet, noggrannhet och kundnöjdhet. Genom moderna arbetsmetoder och beprövade, godkända material säkerställer vi markeringar som håller över tid och uppfyller gällande krav och standarder.
+                    Vårt fokus ligger alltid på högsta säkerhet, precision och kundnöjdhet. Genom moderna borriggar, bandburna grävmaskiner och beprövade metoder säkerställer vi att varje projekt levereras i tid, enligt budget och med minsta möjliga omgivningspåverkan.
                   </p>
 
                   {/* Vision Card */}
@@ -163,7 +163,7 @@ export default function About() {
                       lineHeight: 1.5,
                       margin: '0 0 10px 0',
                     }}>
-                      Vår vision: Säkra, tydliga och hållbara trafikmiljöer för alla.
+                      Vår vision: Säkra och hållbara mark- och berglösningar anpassade efter Bohusläns granit.
                     </p>
                     <p style={{
                       color: 'var(--color-gray-600)',
@@ -171,7 +171,7 @@ export default function About() {
                       lineHeight: 1.65,
                       margin: '0 0 12px 0',
                     }}>
-                      Oavsett om du representerar en kommunal förvaltning, en bostadsrättsförening eller en industriverksamhet är vi en tillgänglig och engagerad partner från första rådgivning till färdig linjemålning.
+                      Oavsett om du bygger nytt hus, ska dränera fastigheten eller behöver spräcka bort bergklackar på tomten är vi en tillgänglig och engagerad partner från första rådgivning till slutfört markarbete.
                     </p>
                     <span style={{
                       color: '#0f172a',
@@ -179,7 +179,7 @@ export default function About() {
                       fontSize: '0.9rem',
                       display: 'block',
                     }}>
-                      Dan Wååg, VD & Grundare TMT Vägmarkeringar AB
+                      Nordisk Bergmark AB • Orust & Bohuslän
                     </span>
                   </div>
 
@@ -206,18 +206,18 @@ export default function About() {
             {[
               {
                 icon: ShieldCheck,
-                title: 'Kvalitet & Standard',
-                desc: 'Alla våra vägmarkeringar och material uppfyller Trafikverkets standarder och krav på friktion och reflexförmåga.',
+                title: 'Säkerhet & Behörighet',
+                desc: 'Alla spräng- och markarbeten utförs med fullständiga behörigheter, riskanalyser och godkänd sprängarutrustning.',
               },
               {
                 icon: Award,
-                title: 'Över 30 års erfarenhet',
-                desc: 'Gedigen kompetens från allt från motorvägar till bostadsrättsföreningars parkeringsrutor och truckgångar.',
+                title: 'Modern maskinpark',
+                desc: 'Bandburna borriggar och flexibla grävmaskiner anpassade för tuff bohuslänsk terräng och trånga villatomter.',
               },
               {
                 icon: Users,
-                title: 'Rikstäckande service',
-                desc: 'Vi är verksamma i hela Sverige och anpassar etablering och arbetstider för minsta möjliga trafikpåverkan.',
+                title: 'Lokal förankring',
+                desc: 'Vi utgår från Orust och betjänar hela Bohuslän med snabb etablering, god lokalkännedom och personlig service.',
               },
             ].map(({ icon: Icon, title, desc }, i) => (
               <ScrollReveal key={i} animation="fade-up" delay={i * 100}>

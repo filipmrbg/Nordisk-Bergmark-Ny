@@ -13,20 +13,20 @@ const container: React.CSSProperties = {
 
 const faqItems = [
   {
-    question: 'Hur snabbt kan vi få en offert på vägmarkering?',
-    answer: 'Vi återkopplar vanligtvis inom 24 timmar och tar fram en specificerad offert baserad på era underlag, ritningar eller en genomgång av ytan.',
+    question: 'Hur snabbt kan vi få en offert på bergarbeten eller markarbeten?',
+    answer: 'Vi återkopplar vanligtvis inom 24 timmar och bokar gärna in ett kostnadsfritt platsbesök för att bedöma bergvolym, markförhållanden och säkerhetsavstånd.',
   },
   {
     question: 'Vilka geografiska områden är ni verksamma i?',
-    answer: 'TMT Vägmarkeringar AB utför uppdrag över hela Sverige åt både privata företag, kommuner, bostadsrättsföreningar och vägsamfälligheter.',
+    answer: 'Nordisk Bergmark AB utgår från Orust och utför uppdrag i Uddevalla, Tjörn, Stenungsund, Lysekil och över hela Bohuslän samt närliggande delar av Västra Götaland.',
   },
   {
-    question: 'Klarar era markeringar nordiskt vinterklimat och plogning?',
-    answer: 'Ja, vi använder certifierad termoplast och slitstarka tvåkomponentsfärger utvecklade för att klara tuffa väderförhållanden, saltning och snöröjning.',
+    question: 'Kan ni spräcka berg nära befintliga hus och grundmurar?',
+    answer: 'Ja, med vibrationsfri hydraulisk stenspräckning eller patronbaserad spräckning kan vi säkert och kontrollerat ta bort berg precis intill husväggar, altaner och vattenledningar utan omgivningsskador.',
   },
   {
-    question: 'Kan ni utföra arbetet under nätter eller helger?',
-    answer: 'Absolut! För att minimera trafikstörningar och inte blockera parkeringsytor under dagtid arbetar vi flexibelt dygnet runt efter överenskommelse.',
+    question: 'Hjälper ni till med tillstånd och besiktning inför sprängning?',
+    answer: 'Ja, vi samordnar allt från polistillstånd och riskanalyser till förbesiktningar och vibrationsmätningar så att hela processen sker tryggt och enligt gällande regelverk.',
   },
 ];
 
@@ -57,8 +57,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) 
 
 export default function Contact() {
   usePageTitle(
-    'Kontakta TMT Vägmarkeringar | Hela Sverige',
-    'Kontakta TMT Vägmarkeringar AB för professionell vägmarkering, linjemålning, parkeringslinjer och industrimålning i hela Sverige. Ring 073-771 86 17.'
+    'Kontakta Nordisk Bergmark AB | Orust & Uddevalla',
+    'Kontakta Nordisk Bergmark AB för bergsprängning, bergborrning, stenspräckning och markarbeten på Orust, i Uddevalla och hela Bohuslän. Ring 072-210 75 82.'
   );
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -123,7 +123,7 @@ export default function Contact() {
                 Så når du oss
               </h2>
               <p style={{ color: 'var(--color-gray-600)', fontSize: '1rem', lineHeight: 1.8, margin: 0 }}>
-                Kontakta oss via telefon, e-post eller formuläret. Oavsett om det gäller parkeringsmarkering, väglinjer, truckgångar eller symboler hjälper vi er gärna.
+                Kontakta oss via telefon, e-post eller formuläret. Oavsett om det gäller bergsprängning, bergborrning, stenspräckning, dränering eller tomtplanering hjälper vi er gärna.
               </p>
 
               <div style={{ marginTop: '40px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -147,12 +147,12 @@ export default function Contact() {
                     </p>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
                       <a
-                        href="tel:0737718617"
+                        href="tel:0722107582"
                         style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, transition: 'color 0.2s ease' }}
                         onMouseEnter={e => (e.currentTarget.style.color = '#0F172A')}
                         onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
                       >
-                        073-771 86 17
+                        072-210 75 82
                       </a>
                     </div>
                   </div>
@@ -177,7 +177,7 @@ export default function Contact() {
                       Verksamhetsområde
                     </p>
                     <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-                      Hela Sverige • Rikstäckande etablering
+                      Orust • Uddevalla • Hela Bohuslän
                     </p>
                   </div>
                 </div>
@@ -201,12 +201,12 @@ export default function Contact() {
                       E-post
                     </p>
                     <a
-                      href="mailto:info@tmtab.com"
+                      href="mailto:Nordiskbergmark@gmail.com"
                       style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, transition: 'color 0.2s ease' }}
                       onMouseEnter={e => (e.currentTarget.style.color = '#0F172A')}
                       onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
                     >
-                      info@tmtab.com
+                      Nordiskbergmark@gmail.com
                     </a>
                   </div>
                 </div>
@@ -230,7 +230,7 @@ export default function Contact() {
                       Företagsuppgifter
                     </p>
                     <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-                      TMT Vägmarkeringar AB • Org.nr: 559221-0099 • Godkänd för F-skatt
+                      Nordisk Bergmark AB • Org.nr: 559547-7760 • Godkänd för F-skatt
                     </p>
                   </div>
                 </div>
@@ -341,7 +341,7 @@ export default function Contact() {
                     </label>
                     <textarea
                       rows={4}
-                      placeholder="Berätta om typ av markering, yta (ca m² eller antal p-platser) samt önskad tidsplan..."
+                      placeholder="Berätta om ert projekt, bergvolym, tomtförutsättningar samt önskad tidsplan..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       required
@@ -391,7 +391,7 @@ export default function Contact() {
           <FAQAccordion
             items={faqItems}
             title="Vanliga frågor om våra tjänster"
-            subtitle="Här har vi samlat svar på återkommande frågor kring offerter, etablering och vägmarkeringsarbeten."
+            subtitle="Här har vi samlat svar på återkommande frågor kring offerter, etablering och spräng- och markarbeten."
             dark={false}
           />
         </div>

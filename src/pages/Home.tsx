@@ -13,6 +13,7 @@ import ProjectsGallery from '../components/ProjectsGallery';
 import FAQAccordion from '../components/FAQAccordion';
 import CallModal from '../components/CallModal';
 import { ServiceIcon } from '../components/ServiceIcons';
+import ReviewCard from '../components/ReviewCard';
 import { usePageTitle } from '../hooks/usePageTitle';
 import services, { ServiceItem } from '../data/services';
 import images from '../data/images';
@@ -26,30 +27,57 @@ const container: React.CSSProperties = {
 const homeFaqItems = [
   {
     question: 'Kostar det något att få en offert?',
-    answer: 'Nej, vi erbjuder alltid kostnadsfria offerter och teknisk rådgivning helt utan förbindelser för alla typer av väg- och linjemålningsprojekt.',
+    answer: 'Nej, vi erbjuder alltid kostnadsfria offerter och teknisk rådgivning helt utan förbindelser för alla typer av bergarbeten och markentreprenader.',
   },
   {
-    question: 'Utför ni vägmarkeringar över hela Sverige?',
-    answer: 'Ja, TMT Vägmarkeringar AB utför uppdrag åt företag, kommuner, bostadsrättsföreningar, samfälligheter och fastighetsägare över hela landet.',
+    question: 'Vilket geografiskt område jobbar ni i?',
+    answer: 'Nordisk Bergmark AB utgår från Orust men utför arbeten i Uddevalla, Tjörn, Stenungsund, Lysekil och över hela Bohuslän samt närliggande delar av Västra Götaland.',
   },
   {
-    question: 'Vilka typer av material använder ni vid linjemålning?',
-    answer: 'Vi arbetar med godkänd termoplast, slitstark 2K-vägfärg och reflexpärlor som uppfyller alla krav och standarder för nordiskt klimat och hög trafikbelastning.',
+    question: 'Vad är skillnaden mellan bergsprängning och stenspräckning?',
+    answer: 'Bergsprängning används vid större bergvolymer och tomtschaktning med täckning av tunga sprängmattor. Stenspräckning (hydraulisk eller patronbaserad) är en skonsam, vibrationsfri metod som lämpar sig optimalt tätt intill befintliga husgrunder, ledningar och känslig bebyggelse.',
   },
   {
-    question: 'Hur snabbt kan ytan öppnas för trafik efter markering?',
-    answer: 'Termoplast och moderna markeringsfärger torkar och härdar mycket snabbt, oftast inom 15–30 minuter, vilket minimerar avstängningar och driftstörningar.',
+    question: 'Hjälper ni till med besiktning och tillstånd vid bergsprängning?',
+    answer: 'Ja, vi samordnar nödvändiga tillstånd, riskanalyser, förbesiktning av närliggande fastigheter och vibrationsmätning så att hela entreprenaden sker tryggt och enligt gällande regelverk.',
   },
   {
-    question: 'Kan ni utföra arbetet under kvällar, nätter eller helger?',
-    answer: 'Ja, vi anpassar våra arbetstider efter trafikflöde och er verksamhet och utför regelbundet uppdrag nattetid eller under helger när trafiken är som lägst.',
+    question: 'Erbjuder ni även dränering, grävning och snöröjning?',
+    answer: 'Absolut. Utöver bergsprängning och bergborrning utför vi kompletta markarbeten som husgrunder, tomtplanering, schakt och dränering, samt snöröjning under vintern.',
+  },
+];
+
+const homeReviews = [
+  {
+    name: 'Johan E.',
+    location: 'Orust',
+    authorSub: 'Orust, Bohuslän',
+    text: 'Anlitade Nordisk Bergmark för bergsprängning och schaktning inför vårt husbygge på Orust. Otroligt professionellt genomfört med full koll på besiktning och vibrationer mot grannfastigheterna. Rekommenderas varmt!',
+    stars: 5,
+    date: '1 månad sedan',
+  },
+  {
+    name: 'Karin M.',
+    location: 'Uddevalla',
+    authorSub: 'Uddevalla, Bohuslän',
+    text: 'Fick hjälp med dränering runt källaren och stenspräckning av bergsklackar på tomten. Arbetet utfördes snabbt, noggrant och tomten lämnades i toppskick. Mycket trevligt och pålitligt bemötande genom hela projektet.',
+    stars: 5,
+    date: '2 månader sedan',
+  },
+  {
+    name: 'Markus L.',
+    location: 'Tjörn',
+    authorSub: 'Tjörn, Bohuslän',
+    text: 'Grymt duktiga och pålitliga hantverkare! De borrade och spräckte bort berget intill vår befintliga altan helt utan skador på omgivningen. Punktliga, moderna maskiner och ett riktigt snyggt slutresultat.',
+    stars: 5,
+    date: '3 veckor sedan',
   },
 ];
 
 export default function Home() {
   usePageTitle(
-    'TMT Vägmarkeringar | Professionell vägmarkering & linjemålning i hela Sverige',
-    'TMT Vägmarkeringar AB utför professionell vägmarkering, linjemålning, parkeringsrutor och industrimålning för företag, kommuner och BRF:er i hela Sverige. Kontakta oss för fri offert!'
+    'Nordisk Bergmark AB | Bergsprängning & Markarbeten i Bohuslän',
+    'Nordisk Bergmark AB utför professionell bergsprängning, bergborrning, stenspräckning, dränering och markarbeten på Orust, i Uddevalla och hela Bohuslän. Fri offert!'
   );
 
   const heroBgRef = useRef<HTMLDivElement>(null);
@@ -112,7 +140,7 @@ export default function Home() {
             }}
           >
             <source
-              src={images.hero.videoUrl || 'https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260916_120304_b6e22521-4e42-4364-9c14-ebed64144e92.mp4'}
+              src={images.hero.videoUrl}
               type="video/mp4"
             />
             <source src="/hero-video.mp4" type="video/mp4" />
@@ -199,7 +227,7 @@ export default function Home() {
                 margin: '0 0 12px 0',
                 textShadow: '0 4px 24px rgba(0, 0, 0, 0.85)',
               }}>
-                Professionell vägmarkering & linjemålning
+                Bergsprängning & Markarbeten i Bohuslän
               </h1>
             </ScrollReveal>
 
@@ -216,7 +244,7 @@ export default function Home() {
                 fontWeight: 400,
                 letterSpacing: '0.01em',
               }}>
-                Vi hjälper företag, kommuner och BRF:er med hållbara vägmarkeringar, parkeringslinjer och industrimålning i hela Sverige.
+                Vi utgår från Orust och utför bergborrning, stenspräckning, bergsprängning, schaktning och dränering i Uddevalla och över hela Bohuslän.
               </p>
             </ScrollReveal>
 
@@ -241,7 +269,7 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  href="tel:0737718617"
+                  href="tel:0722107582"
                   onClick={(e) => {
                     if (window.innerWidth > 768) {
                       e.preventDefault();
@@ -251,7 +279,7 @@ export default function Home() {
                 >
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                     <Phone size={16} />
-                    073-771 86 17
+                    072-210 75 82
                   </span>
                 </Button>
               </div>
@@ -308,7 +336,7 @@ export default function Home() {
                   margin: 0,
                   lineHeight: 1.18,
                 }}>
-                  Väg- och linjemålning med fokus på kvalitet
+                  Mark- och bergarbeten med högsta precision
                 </h2>
               </ScrollReveal>
             </div>
@@ -321,7 +349,7 @@ export default function Home() {
                   lineHeight: 1.65,
                   margin: '0 0 12px 0',
                 }}>
-                  Från kompletta vägmarkeringar och parkeringsrutor till industrigolv och specialsymboler över hela Sverige.
+                  Från bergsprängning och stenspräckning till schaktning, dränering och snöröjning på Orust och i hela Bohuslän.
                 </p>
                 <Link
                   to="/tjanster"
@@ -383,7 +411,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── SECTION 3: DIN PARTNER INOM VÄGMARKERING / OM OSS ─────── */}
+      {/* ── SECTION 3: DIN PARTNER INOM BERG & MARK / OM OSS ─────── */}
       <section style={{ background: '#ffffff', padding: 'clamp(60px, 8vw, 100px) 0', borderTop: '1px solid #e2e8f0' }}>
         <div style={container}>
           <div className="two-col" style={{
@@ -412,7 +440,7 @@ export default function Home() {
               }}>
                 <img
                   src={images.about.hero.url}
-                  alt="TMT Vägmarkeringar AB"
+                  alt="Nordisk Bergmark AB verksamhet och maskinpark"
                   style={{
                     width: '100%',
                     height: '100%',
@@ -434,7 +462,7 @@ export default function Home() {
                   lineHeight: 1.2,
                   margin: '0 0 14px 0',
                 }}>
-                  Trygg partner för vägmarkering i hela Sverige
+                  Er trygga partner för berg och mark i Bohuslän
                 </h2>
               </ScrollReveal>
               <ScrollReveal animation="scale-x-left" delay={200} duration={0.6}>
@@ -447,16 +475,16 @@ export default function Home() {
                   lineHeight: 1.75,
                   margin: '0 0 32px 0',
                 }}>
-                  TMT Vägmarkeringar AB är specialister på vägmarkering, linjemålning och parkeringsmarkeringar. Sedan starten 2019 har vi hjälpt företag, kommuner, bostadsrättsföreningar och fastighetsägare över hela Sverige att skapa säkra, tydliga och hållbara trafikmiljöer. Med över 30 års samlad erfarenhet erbjuder vi professionella lösningar anpassade efter varje kunds behov.
+                  Nordisk Bergmark AB är experter på bergsprängning, bergborrning, stenspräckning och markarbeten. Med bas på Orust verkar vi över hela Bohuslän och hjälper privatpersoner, byggföretag och fastighetsägare med allt från tomtplanering och bergschakt till husgrunder, dränering och snöröjning. Med modern maskinpark och högsta säkerhetsfokus levererar vi hållbara lösningar anpassade efter varje markförhållande.
                 </p>
               </ScrollReveal>
               <ScrollReveal animation="fade-right" duration={0.8} delay={200}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                   {[
-                    'Över 30 års samlad branscherfarenhet inom linjemålning',
-                    'Slitstarka och godkända material anpassade för nordiskt klimat',
-                    'Snabb etablering och flexibla arbetstider med minimal trafikstörning',
-                    'Kompletta helhetslösningar för företag, kommuner och BRF:er',
+                    'Säker bergsprängning och vibrationsfri stenspräckning',
+                    'Moderna borriggar och grävmaskiner för alla markförhållanden',
+                    'Lokal närvaro på Orust, i Uddevalla och över hela Bohuslän',
+                    'Kompletta helhetslösningar från bergschakt till färdig tomt',
                   ].map((item, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                       <CheckCircle2 size={22} color="#0F172A" style={{ flexShrink: 0 }} />
@@ -505,7 +533,7 @@ export default function Home() {
               fontSize: 'clamp(1.8rem, 3vw, 2.6rem)',
               margin: '0 0 12px 0',
             }}>
-              Behöver ni professionell vägmarkering eller linjemålning?
+              Behöver ni bergsprängning eller markarbeten?
             </h2>
             <p style={{
               color: 'rgba(255,255,255,0.7)',
@@ -513,7 +541,7 @@ export default function Home() {
               margin: '0 0 32px 0',
               lineHeight: 1.7,
             }}>
-              Vi återkopplar med en kostnadsfri offert och rådgivning inom 24 timmar.
+              Vi återkopplar med kostnadsfri offert och rådgivning inför ert projekt på Orust, i Uddevalla eller övriga Bohuslän.
             </p>
             <Button variant="white" size="lg" href="/offert">
               Begär offert
@@ -522,21 +550,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── SECTION 7: CERTIFIERINGAR & BEHÖRIGHETER (NATURAL SHOWCASE — ZERO CARDS) ── */}
+      {/* ── SECTION 6: KUNDOMDÖMEN / REVIEWS ───────────────────── */}
       <section
-        id="certifieringar"
+        id="omdomen"
         style={{
-          background: '#ffffff',
-          padding: 'clamp(80px, 9vw, 120px) 0',
-          position: 'relative',
+          background: '#f8fafc',
+          padding: 'clamp(70px, 9vw, 100px) 0',
           borderTop: '1px solid #e2e8f0',
-          borderBottom: '1px solid #e2e8f0',
         }}
       >
         <div style={container}>
-          {/* Section Header - Clean & Natural */}
           <ScrollReveal animation="fade-up">
-            <div style={{ textAlign: 'center', marginBottom: 'clamp(48px, 6vw, 70px)' }}>
+            <div style={{ textAlign: 'center', marginBottom: '48px' }}>
               <span style={{
                 color: '#0f172a',
                 fontWeight: 700,
@@ -544,94 +569,53 @@ export default function Home() {
                 letterSpacing: '0.08em',
                 textTransform: 'uppercase',
                 display: 'inline-block',
-                marginBottom: '12px',
+                marginBottom: '10px',
                 background: '#e2e8f0',
-                padding: '5px 16px',
+                padding: '4px 14px',
                 borderRadius: '999px',
               }}>
-                Auktoriserad & Certifierad
+                Kundomdömen
               </span>
               <h2 style={{
                 fontFamily: 'var(--font-heading)',
                 color: 'var(--color-text-dark)',
-                fontSize: 'clamp(2rem, 3.4vw, 2.75rem)',
+                fontSize: 'clamp(1.9rem, 3.2vw, 2.5rem)',
                 fontWeight: 700,
                 margin: '0 0 12px 0',
-                textTransform: 'uppercase',
               }}>
-                Certifieringar & behörigheter
+                Vad våra kunder säger
               </h2>
               <p style={{
                 color: 'var(--color-gray-600)',
-                fontSize: '1.05rem',
-                maxWidth: '600px',
+                fontSize: '1rem',
+                maxWidth: '560px',
                 margin: '0 auto',
                 lineHeight: 1.6,
               }}>
-                Vår personal innehar alla nödvändiga certifieringar och behörigheter för säkra och godkända entreprenader.
+                Nöjda kunder i Orust, Uddevalla och övriga Bohuslän är vårt bästa kvitto på noggrant utförda mark- och bergarbeten.
               </p>
             </div>
           </ScrollReveal>
 
-          {/* Natural, Large Logo Showcase — Pure Emblems, Zero Cards */}
-          <div className="cert-logos-showcase">
-            {[
-              {
-                logo: '/id06.png',
-                alt: 'ID06 - Auktoriserad och certifierad personalliggare',
-                title: 'ID06',
-                maxH: '95px',
-                maxW: '130px',
-              },
-              {
-                logo: '/heta-arbeten.png',
-                alt: 'Heta Arbeten - Brandskyddsföreningen certifierad',
-                title: 'Heta Arbeten - Brandskyddsföreningen',
-                maxH: '80px',
-                maxW: '180px',
-              },
-              {
-                logo: '/trafikverket-clean.png',
-                alt: 'Trafikverket Arbete på väg 1+2 certifierad',
-                title: 'Trafikverket - Arbete på väg 1+2',
-                maxH: '58px',
-                maxW: '200px',
-              },
-              {
-                logo: '/ssg.png',
-                alt: 'SSG Entre - Industrisäkerhet certifierad',
-                title: 'SSG - Standard Solutions Group',
-                maxH: '58px',
-                maxW: '190px',
-              },
-            ].map((cert, i) => (
-              <ScrollReveal key={cert.title} animation="fade-up" delay={i * 90}>
-                <div
-                  className="cert-logo-item"
-                  title={cert.title}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translateY(-6px) scale(1.06)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
-                  }}
-                >
-                  <img
-                    className="cert-logo-img"
-                    src={cert.logo}
-                    alt={cert.alt}
-                    loading="lazy"
-                    style={{
-                      maxHeight: cert.maxH,
-                      maxWidth: cert.maxW,
-                    }}
-                  />
-                </div>
+          <div
+            className="reviews-grid"
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              gap: '24px',
+              maxWidth: '1100px',
+              margin: '0 auto',
+            }}
+          >
+            {homeReviews.map((review, idx) => (
+              <ScrollReveal key={idx} animation="fade-up" delay={idx * 100}>
+                <ReviewCard review={review} />
               </ScrollReveal>
             ))}
           </div>
         </div>
       </section>
+
 
       {/* ── SECTION 8: VANLIGA FRÅGOR (FAQ) ── */}
       <section style={{
@@ -651,7 +635,7 @@ export default function Home() {
           <FAQAccordion
             items={homeFaqItems}
             title="Vanliga frågor"
-            subtitle="Här hittar du svar på vanliga funderingar kring offerter, material och hur vi arbetar över hela Sverige."
+            subtitle="Här hittar du svar på vanliga funderingar kring bergsprängning, stenspräckning, markarbeten och hur vi arbetar över hela Bohuslän."
             buttonText="Kontakta oss direkt"
             buttonLink="/kontakt"
             dark={true}
@@ -686,59 +670,7 @@ export default function Home() {
           transform: translateY(-5px) rotate(-0.5deg);
           box-shadow: 0 16px 40px rgba(28,21,16,0.10);
         }
-        .cert-logos-showcase {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          align-items: center;
-          justify-items: center;
-          gap: clamp(28px, 4vw, 56px);
-          max-width: 1100px;
-          margin: 0 auto;
-        }
-        .cert-logo-item {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          height: 95px;
-          padding: 8px 12px;
-          box-sizing: border-box;
-          transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .cert-logo-img {
-          width: auto;
-          height: auto;
-          object-fit: contain;
-          display: block;
-          filter: drop-shadow(0 4px 12px rgba(15, 23, 42, 0.05));
-          transition: filter 0.35s ease, transform 0.35s ease;
-        }
-        @media (max-width: 960px) {
-          .cert-logos-showcase {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 32px;
-            max-width: 480px;
-          }
-          .cert-logo-item {
-            height: 75px;
-            padding: 4px 8px;
-          }
-        }
-        @media (max-width: 640px) {
-          .cert-logos-showcase {
-            grid-template-columns: 1fr;
-            gap: 32px;
-            max-width: 260px;
-          }
-          .cert-logo-item {
-            height: auto !important;
-            padding: 0 !important;
-          }
-          .cert-logo-img {
-            max-height: 52px !important;
-            max-width: 170px !important;
-          }
-        }
+
         @media (max-width: 1024px) {
           .reviews-grid { grid-template-columns: repeat(2, 1fr) !important; }
         }

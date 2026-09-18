@@ -14,8 +14,8 @@ const container: React.CSSProperties = {
 
 export default function ServicesOverview() {
   usePageTitle(
-    'Våra Tjänster | TMT Vägmarkeringar',
-    'Utforska våra tjänster inom vägmarkering, linjemålning, parkeringsmarkering och industrimålning i hela Sverige.'
+    'Våra Tjänster | Nordisk Bergmark AB',
+    'Utforska våra tjänster inom bergsprängning, bergborrning, stenspräckning, markarbeten, dränering och snöröjning i hela Bohuslän.'
   );
 
   const { hash } = useLocation();
@@ -71,7 +71,7 @@ export default function ServicesOverview() {
         paddingBottom: '46px',
         textAlign: 'center',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.72) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.72) 0%, rgba(15, 23, 42, 0.50) 50%, rgba(15, 23, 42, 0.78) 100%)' }} />
 
         <div style={{ ...container, position: 'relative', zIndex: 1 }}>
           <ScrollReveal animation="blur-in">
@@ -93,7 +93,7 @@ export default function ServicesOverview() {
               margin: '0 auto',
               lineHeight: 1.65,
             }}>
-              TMT Vägmarkeringar AB erbjuder professionella lösningar inom vägmarkering, linjemålning och parkeringsmarkering i hela Sverige.
+              Nordisk Bergmark AB erbjuder professionella och säkra lösningar inom bergsprängning, stenspräckning, markarbeten och dränering på Orust och i hela Bohuslän.
             </p>
           </ScrollReveal>
         </div>

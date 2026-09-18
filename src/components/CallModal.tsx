@@ -10,10 +10,10 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
 
   const contacts = [
     {
-      name: 'Dan Wååg',
-      role: 'Ägare & VD',
-      phone: '073-771 86 17',
-      tel: 'tel:0737718617',
+      name: 'Nordisk Bergmark AB',
+      role: 'Arbetsledning & Offert',
+      phone: '072-210 75 82',
+      tel: 'tel:0722107582',
     },
   ];
 
@@ -104,7 +104,7 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
               fontFamily: 'var(--font-heading)',
             }}
           >
-            Ring TMT Vägmarkeringar
+            Ring Nordisk Bergmark AB
           </h2>
           <p style={{ fontSize: '0.9rem', color: '#64748b', margin: 0, lineHeight: 1.5 }}>
             Kontakta oss direkt för rådgivning, frågor och kostnadsfri offert.

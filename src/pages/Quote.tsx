@@ -17,12 +17,12 @@ const faqItems = [
     answer: 'Nej, offert och rådgivning är alltid helt kostnadsfritt. Vi går igenom era ritningar, ytor och förutsättningar och tar fram ett tydligt prisförslag helt utan förbindelser.',
   },
   {
-    question: 'Hur snabbt kan ni påbörja markeringsarbetet?',
-    answer: 'Det beror på projektets omfattning och plats. Vi har stor flexibilitet och snabb etablering, och kan ofta utföra mindre uppdrag med kort varsel.',
+    question: 'Hur snabbt kan ni påbörja bergarbetet eller markarbetet?',
+    answer: 'Det beror på projektets omfattning och eventuella tillstånd eller besiktningar. Vi har stor flexibilitet och egen maskinpark på Orust, vilket gör att vi kan etablera oss snabbt över hela Bohuslän.',
   },
   {
-    question: 'Utför ni arbeten åt både privatpersoner, BRF och företag?',
-    answer: 'Ja! Vi hjälper företag, kommuner, bostadsrättsföreningar, fastighetsbolag och vägsamfälligheter över hela Sverige.',
+    question: 'Utför ni arbeten åt både privatpersoner och företag?',
+    answer: 'Ja! Vi hjälper privatpersoner, villaägare, lantbrukare, byggentreprenörer och samfälligheter på Orust, i Uddevalla och övriga Bohuslän.',
   },
 ];
 
@@ -53,8 +53,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | 
 
 export default function Quote() {
   usePageTitle(
-    'Begär offert | TMT Vägmarkeringar',
-    'Beskriv ert projekt och begär en kostnadsfri offert för vägmarkering, linjemålning, parkeringsrutor eller industrimålning i hela Sverige.'
+    'Begär offert | Nordisk Bergmark AB',
+    'Beskriv ert projekt och begär en kostnadsfri offert för bergsprängning, stenspräckning, markarbeten, dränering eller snöröjning på Orust och i Bohuslän.'
   );
   const [name, setName]       = useState('');
   const [email, setEmail]     = useState('');
@@ -202,11 +202,12 @@ export default function Quote() {
                       onBlur={blurInput}
                     >
                       <option value="">Välj tjänst...</option>
-                      <option value="vagmarkering">Vägmarkering & Trafik</option>
-                      <option value="parkeringsmarkering">Parkeringsmarkering & Laddplatser</option>
-                      <option value="industrimalning">Industrimålning & Lagerlinjer</option>
-                      <option value="symbolmalning">Symbolmålning & Specialmarkering</option>
-                      <option value="annat">Annat markeringsarbete</option>
+                      <option value="bergsprangning">Bergsprängning</option>
+                      <option value="markarbete">Markarbeten</option>
+                      <option value="dranering">Dränering</option>
+                      <option value="snorojning">Snöröjning</option>
+                      <option value="stensprackning">Stenspräckning</option>
+                      <option value="annat">Annat mark- eller bergarbete</option>
                     </select>
                   </div>
 
@@ -217,7 +218,7 @@ export default function Quote() {
                     <textarea
                       required
                       rows={5}
-                      placeholder="Berätta om ytan, antal p-platser, vägsträcka, plats/ort och önskad tidsram..."
+                      placeholder="Berätta om tomtens förutsättningar, bergvolym, adress/ort samt önskad tidsram..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       style={{ ...inputStyle, resize: 'vertical' }}
@@ -272,10 +273,10 @@ export default function Quote() {
                     fontSize: '1.4rem',
                     margin: '0 0 16px 0',
                   }}>
-                    Varför välja TMT Vägmarkeringar?
+                    Varför välja Nordisk Bergmark AB?
                   </h3>
                   <p style={{ color: 'var(--color-gray-600)', fontSize: '0.96rem', lineHeight: 1.7, margin: 0 }}>
-                    Vi kombinerar gedigen branscherfarenhet med moderna appliceringsmetoder, slitstarka material och högsta precision.
+                    Vi kombinerar gedigen yrkeskompetens med moderna borriggar, säkra metoder och högsta precision.
                   </p>
                 </div>
 
@@ -283,18 +284,18 @@ export default function Quote() {
                   {[
                     {
                       icon: ShieldCheck,
-                      title: 'Certifierad kvalitet',
-                      desc: 'Full överensstämmelse med gällande krav och standarder för vägmarkering och trafiksäkerhet.',
+                      title: 'Certifierad säkerhet',
+                      desc: 'Full behörighet för bergsprängning med riskanalyser och säkra vibrationsmätningar.',
                     },
                     {
                       icon: Clock,
                       title: 'Snabba besked & tidsplan',
-                      desc: 'Specificerad offert inom 24 timmar och punktlig leverans enligt överenskommelse med minimal trafikstörning.',
+                      desc: 'Kostnadsfri offert inom 24 timmar och punktlig leverans enligt överenskommelse.',
                     },
                     {
                       icon: Award,
-                      title: 'Över 30 års erfarenhet',
-                      desc: 'Omfattande kompetens inom allt från allmänna vägar till logistikanläggningar och bostadsrättsföreningar.',
+                      title: 'Lokal expertis i Bohuslän',
+                      desc: 'Gedigen erfarenhet av bohuslänska mark- och bergförhållanden med utgångspunkt från Orust.',
                     },
                   ].map(({ icon: Icon, title, desc }, i) => (
                     <div
@@ -346,7 +347,7 @@ export default function Quote() {
           <FAQAccordion
             items={faqItems}
             title="Vanliga frågor om offerten"
-            subtitle="Här hittar du svar på de vanligaste frågorna inför ert vägmarkeringsprojekt."
+            subtitle="Här hittar du svar på de vanligaste frågorna inför ert mark- och bergarbete."
           />
         </div>
       </section>
